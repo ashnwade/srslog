@@ -100,6 +100,7 @@ func TestTLSDialer(t *testing.T) {
 	pool.AppendCertsFromPEM(serverCert)
 	config := tls.Config{
 		RootCAs: pool,
+		InsecureSkipVerify: true,
 	}
 
 	w := Writer{
