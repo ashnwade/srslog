@@ -1,3 +1,3 @@
-module github.com/gravwell/srslog/v1
+module github.com/gravwell/srslog
 
 go 1.15
